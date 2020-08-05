@@ -28,3 +28,7 @@ See [Images](https://github.com/ahartikainen/BayesianWeather/tree/master/RainGau
   <img src="https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.40.23.jpg?raw=true" height="400" />
   <img src="https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.43.45-1.jpg?raw=true" height="400" /> 
 </p>
+
+
+![blue bucket](https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.40.23.jpg?raw=true)
+![yellow bucket](https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.43.45-1.jpg?raw=true)
