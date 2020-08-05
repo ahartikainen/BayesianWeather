@@ -1,2 +1,22 @@
 # BayesianWeather
 Random bayesian weather measurements
+
+sandbox environment created by following the instructions given in https://github.com/ahartikainen/stan_sandbox
+
+See the latest instructions in the sandbox [Use section](https://github.com/ahartikainen/stan_sandbox#use)
+
+## Use
+Serve with the environment in [stan_sandbox](https://github.com/ahartikainen/stan_sandbox)
+for convenience and speed, see
+[this post](https://discourse.jupyter.org/t/tip-speed-up-binder-launches-by-pulling-github-content-in-a-binder-link-with-nbgitpuller/922)
+in Jupyter Discourse for a detailed description.
+
+To generate the shield with the link to the binder environment:
+
+* Generate the binder link to run the notebook in the sandbox environment.
+  There is a helper page [nbgitpuller link generator](https://jupyterhub.github.io/nbgitpuller/link).
+  The `Binder` tab allows to specify
+  * `Git Environment Repository URL`: `https://github.com/ahartikainen/stan_sandbox`
+  * `Git Content Repository URL`: `https://github.com/ahartikainen/BayesianWeather`
+  * and the file or folder to be opened: `RainGauge`
+* Create a custom shield from [Binder docs](https://mybinder.readthedocs.io/en/latest/howto/badges.html)
