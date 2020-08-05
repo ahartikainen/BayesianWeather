@@ -21,3 +21,10 @@ Scale was tared between the measurements and the buckets were placed approximate
 
 Scale used for the weighting has approximately absolute accuracy of +/- 2 grams and the result is rounded to the closest 1 gram.
 Tape measure results were inferred from the photograph and are given +/- 2 centimeter accuracy.
+
+See [Images](https://github.com/ahartikainen/BayesianWeather/tree/master/RainGauge/images_cropped) folder for all images
+
+<p align="center">
+  <img src="https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.40.23.jpg?raw=true" height="400" />
+  <img src="https://github.com/ahartikainen/BayesianWeather/blob/master/RainGauge/images_cropped/2020-07-24%2019.43.45-1.jpg?raw=true" height="400" /> 
+</p>
