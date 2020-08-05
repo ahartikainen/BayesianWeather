@@ -13,13 +13,10 @@ sandbox environment created by following the instructions given in https://githu
 
 See the latest instructions in the sandbox [Use section](https://github.com/ahartikainen/stan_sandbox#use)
 
-#### Use
+#### Create a new badge
 Serve with the environment in [stan_sandbox](https://github.com/ahartikainen/stan_sandbox)
-for convenience and speed, see
-[this post](https://discourse.jupyter.org/t/tip-speed-up-binder-launches-by-pulling-github-content-in-a-binder-link-with-nbgitpuller/922)
-in Jupyter Discourse for a detailed description.
 
-To generate the shield with the link to the binder environment:
+To generate the badge:
 
 * Generate the binder link to run the notebook in the sandbox environment.
   There is a helper page [nbgitpuller link generator](https://jupyterhub.github.io/nbgitpuller/link?tab=binder).
