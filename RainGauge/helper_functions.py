@@ -82,6 +82,38 @@ def calculate_bucket_area(radius, wedge_inner, wedge_outer, wedge_length):
     ) / 10_000  # m^2
     return bucket_area
 
+def calculate_bucket_area_uncertain(radius, wedge_inner, wedge_outer, wedge_length):
+    """Calculate bucket area
+    
+    Area circle + Area wedge
+    """
+    from uncertainties.umath import sin
+    from pandas import Series
+    circumference = 2 * np.pi * radius
+    wedge_angle = 2 * np.pi * wedge_inner / circumference
+    wedge_area_outside = (
+        wedge_outer * wedge_length + abs(wedge_inner - wedge_outer) * wedge_length
+    )
+    wedge_triangle_p = (radius * 2 + wedge_inner) / 2
+    wedge_area_inside = (
+        wedge_triangle_p
+        * (wedge_triangle_p - radius) ** 2
+        * (wedge_triangle_p - wedge_inner)
+    ) ** 0.5
+    bucket_area_inside = (
+        np.pi * radius ** 2
+        - 0.5 * radius ** 2 * (wedge_angle - (sin(wedge_angle) if not isinstance(wedge_angle, Series) else wedge_angle.apply(lambda x: sin(x))))
+        + (
+            wedge_triangle_p
+            * (wedge_triangle_p - radius) ** 2
+            * (wedge_triangle_p - wedge_inner)
+        )**0.5
+    )
+    bucket_area = (
+        bucket_area_inside + wedge_area_inside + wedge_area_outside
+    ) / 10_000  # m^2
+    return bucket_area
+
 
 def get_stan_data(**kwargs):
     """Transform dataframe data to (columns == groups) to Stan ragged data structure.
